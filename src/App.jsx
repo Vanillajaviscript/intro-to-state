@@ -3,7 +3,8 @@ import {useState} from "react";
 // IMPORT imageData.js AND STORE IT IN A VARIABLE CALLED imagesArr
 import imagesArr from "./imageData";
 import "./App.css";
-
+import Header from "./components/Header";
+import Footer from "./components/Footer"
 const App = () => {
   // USE useState TO CREATE  [bigImage, setBigImage] 
 const [bigImage, setBigImage] = useState(imagesArr[0].img);
@@ -27,6 +28,7 @@ const [bigImage, setBigImage] = useState(imagesArr[0].img);
   ))
   return (
     <div className="App">
+      <Header />
       <h1>Cities Of The World</h1>
       <div id="wrapper">
         <div id="thumbnails">
@@ -35,6 +37,7 @@ const [bigImage, setBigImage] = useState(imagesArr[0].img);
         {/* THE SRC IMAGE URL SHOULD BE SET TO THE VALUE THAT IS STORED IN bigImage */}
         <img src={bigImage} id="bigimage" alt='bigImage'/>
       </div>
+      <Footer />
     </div>
   );
 }

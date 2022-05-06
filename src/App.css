@@ -59,9 +59,39 @@ body {
 	}
 }
 
-img {
-animation: drop 1000ms ease;
-animation-fill-mode:both;
-animation-delay: 1s;
-animation-direction: alternate;
+#thumbnails {
+animation: drop 2000ms ease;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.nav-logo {
+    height: 80px;
+    width: 90px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items > li {
+    padding: 10px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
 }
